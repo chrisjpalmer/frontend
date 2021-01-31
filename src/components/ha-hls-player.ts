@@ -186,6 +186,7 @@ class HaHLSPlayer extends LitElement {
     url: string
   ) {
     const hls = new Hls({
+      liveSyncDurationCount: 1,
       liveBackBufferLength: 60,
       fragLoadingTimeOut: 30000,
       manifestLoadingTimeOut: 30000,
